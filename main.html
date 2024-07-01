@@ -4,12 +4,24 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		form{
+			padding:20px;
+			margin:20px;
+			background-color:grey;
+		}
+		#submit{
+		text-align:center;
+			
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	<form method="POST">
 	<label for="name">Name</label>
 	<input id="name" type="text" placeholder="Name"><br>
 		<label for="phone">Phone Number</label>
@@ -19,7 +31,7 @@
 	<label for="checkbox">Have you ever lived with a Dog before?</label>
 	<input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
 <legend>Please select your preferred breeds</legend>
-	<select id="mutltiSelect">
+	<select id="multiSelect">
 		<option value="Bhotia">
 			Bhotia
 		</option>
@@ -37,9 +49,9 @@
 
 		
 	</select><br>
-	<button type="submit">Submit</button>
+	<input type="submit" value="Submit" id="submit" placeholder="">
 	
-
+</form>
 </body>
 
 </html>
